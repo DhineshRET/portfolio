@@ -9,7 +9,7 @@ uploaded_files = st.file_uploader(
 for uploaded_file in uploaded_files:
     bytes_data = uploaded_file.read()
     #temp=pd.read_csv(uploaded_files._file_urls)
-    st.write("filename:", uploaded_file.name,"column:",uploaded_file._file_urls)
+    st.write("filename:", uploaded_file.name,"column:",uploaded_file.read)
     # st.write(bytes_data)
 
 # DATE_COLUMN = 'date/time'
