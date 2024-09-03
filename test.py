@@ -2,7 +2,7 @@ import streamlit as st
 import pandas as pd
 from io import StringIO
 
-st.title('Uber pickups in NYC')
+st.title('Check')
 uploaded_files = st.file_uploader(
     "Choose a CSV file", accept_multiple_files=True
 )
