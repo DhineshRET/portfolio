@@ -3,13 +3,19 @@ import pandas as pd
 from io import StringIO
 
 st.title('Check')
+
 uploaded_files = st.file_uploader(
-    "Choose a CSV file", accept_multiple_files=True
+    "Choose a CSV file"
 )
-for uploaded_file in uploaded_files:
-    bytes_data = uploaded_file.read()
-    temp=pd.read_csv(uploaded_file)
-    st.write("filename:", uploaded_file.name,"column:",uploaded_file.read)
+df= pd.read_csv(uploaded_files)
+st.write(df)
+# uploaded_files = st.file_uploader(
+#     "Choose a CSV file", accept_multiple_files=True
+# )
+# for uploaded_file in uploaded_files:
+#     bytes_data = uploaded_file.()
+#     temp=pd.read_csv(uploaded_file)read
+#     st.write("filename:", uploaded_file.name,"column:",uploaded_file.read)
     # st.write(bytes_data)
 
 # DATE_COLUMN = 'date/time'
